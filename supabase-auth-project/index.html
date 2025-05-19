@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase Email Authentication</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Supabase Email Authentication</h1>
+
+    <!-- Sign-Up Form -->
+    <div id="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signup">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="signup-message"></p>
+      <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+    </div>
+
+    <!-- Sign-In Form -->
+    <div id="login-form" style="display: none;">
+      <h2>Log In</h2>
+      <form id="login">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <p id="login-message"></p>
+      <p>Forgot password? <a href="#" id="show-reset">Reset Password</a></p>
+      <p>No account? <a href="#" id="show-signup">Sign Up</a></p>
+    </div>
+
+    <!-- Password Reset Form -->
+    <div id="reset-form" style="display: none;">
+      <h2>Reset Password</h2>
+      <form id="reset">
+        <label for="reset-email">Email</label>
+        <input type="email" id="reset-email" required>
+        <button type="submit">Send Reset Link</button>
+      </form>
+      <p id="reset-message"></p>
+      <p>Back to <a href="#" id="show-login-from-reset">Log In</a></p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

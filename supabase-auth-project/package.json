@@ -1,0 +1,18 @@
+{
+  "name": "supabase-auth-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
